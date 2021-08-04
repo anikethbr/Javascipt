@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE='JAVASCRIPT'>
+function sum()
+{
+	var x,y,sum;
+	x=Number(document.FRM.txt1.value);
+	y=Number(document.FRM.txt2.value);
+	sum=x+y;
+	document.FRM.sol.value=sum;
+}
+function SUBSTRACT()
+{
+	var x,y,SUB;
+	x=Number(document.FRM.txt1.value);
+	y=Number(document.FRM.txt2.value);
+	SUB=x-y;
+	document.FRM.sol.value=SUB;
+}
+function MULTIPLY()
+{
+	var x,y,MUL;
+	x=Number(document.FRM.txt1.value);
+	y=Number(document.FRM.txt2.value);
+	MUL=x*y;
+	document.FRM.sol.value=MUL;
+}
+function DIVIDE()
+{
+	var x,y,DIV;
+	x=Number(document.FRM.txt1.value);
+	y=Number(document.FRM.txt2.value);
+	DIV=x/y;
+	document.FRM.sol.value=DIV;
+}
+function MODULUS()
+{
+	var x,y,MOD;
+	x=Number(document.FRM.txt1.value);
+	y=Number(document.FRM.txt2.value);
+	MOD=x%y;
+	document.FRM.sol.value=MOD;
+}
+
+</SCRIPT>
+</HEAD>
+<BODY  TOPMARGIN='80'><CENTER><FONT SIZE='10' COLOR='GREEN' FACE='AR DESTINE'>
+<HR COLOR='GREY'></HR><H1>ANIKETH RAO'S SIMPLE CALCULATOR</H1><HR COLOR='GREY'></HR></FONT>
+<FORM NAME="FRM"><FONT SIZE='10' ALIGN='CENTER' COLOR='BLUE'>
+<FIELDSET><LEGEND></LEGEND><BR><BR>
+ENTER FIRST OPERAND:
+<INPUT TYPE='TEXT' NAME='txt1' STYLE='font-size:50pt;height:70px;width:500px;color:#0000FF;background-color:#FFFFFF;padding:12px 20px;border-radius: 4px;spacing:12px;border:2px solid #555;'><BR><BR>
+ENTER SECOND OPERAND:
+<INPUT TYPE='TEXT' NAME="txt2" STYLE='font-size:50pt;height:70px;width:500px;color:#0000FF;background-color:#FFFFFF;padding:12px 20px;border-radius: 4px;spacing:12px;border:2px solid #555;' ><BR><BR>
+<FONT FACE='ARIAL' SIZE='7' COLOR='MAGENTA' ALIGN='JUSTIFY'>SELECT THE ARITHMETIC OPERATOR GIVEN BELOW</FONT><BR><BR>
+&nbsp;&nbsp;<INPUT TYPE='BUTTON' VALUE='  +  ' onClick="sum()" STYLE='font-size:50pt;height:100px'>&nbsp;&nbsp;
+<INPUT TYPE='BUTTON' VALUE='  -  ' onClick='SUBSTRACT()' STYLE='font-size:50pt;height:100px'>&nbsp;&nbsp;
+<INPUT TYPE='BUTTON' VALUE='  *  ' onClick='MULTIPLY()' STYLE='font-size:50pt;height:100px'>&nbsp;&nbsp;
+<INPUT TYPE='BUTTON' VALUE='  /  ' onClick='DIVIDE()' STYLE='font-size:50pt;height:100px'>&nbsp;&nbsp;
+<INPUT TYPE='BUTTON' VALUE='  %  ' onClick='MODULUS()' STYLE='font-size:50pt;height:100px'>&nbsp;&nbsp;<BR><BR>
+SOLUTION IS:
+<INPUT TYPE='TEXT' NAME='sol' STYLE='font-size:50pt;height:70px;color:#000000;width:700px;background-color:#D2B4DE;padding:12px 20px;border-radius: 4px;spacing:12px;border:2px solid #555;'><BR><BR>
+<INPUT TYPE='RESET' VALUE=' CLEAR ' STYLE='font-size:25pt;height:75px;background-color:#FFFFFF;border: 2px solid #555;'><BR><BR>
+<FONT FACE='CALBIRI' SIZE='7' COLOR='INDIGO'><MARQUEE>NOTE:- '%' IS CALLED MODULUS OPERATOR, IT GIVES THE REMAINDER</MARQUEE></FONT>
+</FONT></FIELDSET></CENTER></FORM>
+</BODY>
+</HTML>
+
